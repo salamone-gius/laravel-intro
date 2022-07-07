@@ -99,6 +99,9 @@
             <div class="main-content flex-center">
                 <h2 class="title">questa è la pagina <br> "1"</h2>
             </div>
+            <div class="main-content flex-center">
+                @dump($team)
+            </div>
         </main>
     </body>
 </html>

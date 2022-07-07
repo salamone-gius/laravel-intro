@@ -18,7 +18,21 @@ Route::get('/', function () {
 });
 
 Route::get('/pag-1', function () {
-    return view('pag-1');
+    $data = [
+        [
+            "nome" => "Samuele",
+            "cognome" => "Madrigali"
+        ],
+        [
+            "nome" => "Pippo",
+            "cognome" => "Neri"
+        ],
+        [
+            "nome" => "Franco",
+            "cognome" => "Bianchi"
+        ],
+        ];
+    return view('pag-1', ["team" => $data]);
 });
 
 Route::get('/pag-2', function () {
