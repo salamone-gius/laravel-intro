@@ -36,7 +36,21 @@ Route::get('/pag-1', function () {
 });
 
 Route::get('/pag-2', function () {
-    return view('pag-2');
+    $sedi = [
+        [
+            "luogo" => "Agrigento",
+            "indirizzo" => "Via Linosa, 34"
+        ],
+        [
+            "luogo" => "Palermo",
+            "indirizzo" => "Via Lipari, 109"
+        ],
+        [
+            "luogo" => "Catania",
+            "indirizzo" => "Via Favignana, 2"
+        ],
+    ];
+    return view('pag-2', ["sedi" => $sedi]);
 });
 
 Route::get('/pag-3', function () {

@@ -99,6 +99,14 @@
             <div class="main-content flex-center">
                 <h2 class="title">questa è la pagina <br> "2"</h2>
             </div>
+            <div style="text-align: center; margin: 30px;">
+                <h2>Le sedi</h2>
+                <ul>
+                    @foreach ($sedi as $sede)
+                        <li>{{$sede['luogo']}} {{$sede['indirizzo']}}</li>
+                    @endforeach
+                </ul>
+            </div>
         </main>
     </body>
 </html>
