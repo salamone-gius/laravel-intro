@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Laravel - Home</title>
+@extends('layouts.base')
 
+@section('title')
+    Home Page
+@endsection
+
+@section('head-scripts')
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
@@ -70,14 +69,10 @@
                 margin-top: 6rem;
             }
         </style>
-    </head>
-    <body>
-        {{-- include parte sempre dalla cartella views --}}
-        @include('partials.header')
-        <main>
-            <div class="main-content flex-center">
-                <h2 class="title">questa è la pagina <br> "home"</h2>
-            </div>
-        </main>
-    </body>
-</html>
+@endsection
+
+@section('page-content')
+    <div class="main-content flex-center">
+        <h2 class="title">questa è la pagina <br> "home"</h2>
+    </div>
+@endsection
