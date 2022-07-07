@@ -17,7 +17,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/pag-1', function () {
+Route::get('pag-1', function () {
     $data = [
         [
             "nome" => "Samuele",
@@ -33,7 +33,7 @@ Route::get('/pag-1', function () {
         ],
         ];
     return view('pag-1', ["team" => $data]);
-});
+})->name('pagina-1');
 
 Route::get('/pag-2', function () {
     $sedi = [

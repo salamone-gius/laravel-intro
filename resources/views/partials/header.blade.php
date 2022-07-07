@@ -10,7 +10,7 @@
                 <a href="/">home</a>
             </li>
             <li>
-                <a href="pag-1">pagina 1</a>
+                <a href="{{route('pagina-1')}}">pagina 1</a>
             </li>
             <li>
                 <a href="pag-2">pagina 2</a>
