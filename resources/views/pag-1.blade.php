@@ -99,8 +99,13 @@
             <div class="main-content flex-center">
                 <h2 class="title">questa è la pagina <br> "1"</h2>
             </div>
-            <div class="main-content flex-center">
-                @dump($team)
+            <div style="text-align: center; margin: 30px;">
+                <h2>Il nostro team</h2>
+                <ul>
+                    @foreach ($team as $membro)
+                        <li>{{$membro['nome']}} {{$membro['cognome']}}</li>
+                    @endforeach
+                </ul>
             </div>
         </main>
     </body>
